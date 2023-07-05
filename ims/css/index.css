@@ -1,0 +1,93 @@
+/* Header stylesheet start here*/
+@import url("headerStyle.css");
+/* Header stylesheet end here */
+
+/* Footer stylesheet start here*/
+@import "footerStyle.css";
+/* Footer stylesheet end here */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Main section style start here */
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.mainContainer{
+    flex: 0.5;
+    width: 320px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formDiv{
+    flex: 1;
+    width: 100%;
+}
+
+.loginTitle{
+    flex: 1;
+}
+
+label{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin: 3px 0px;
+}
+input{
+    
+    display: block;
+    width: 96%;
+    padding: 8px;
+   
+
+
+}
+
+button{
+    padding: 4px 8px;
+    border: none;
+    text-align: center;
+    color:white;
+    background-color: #063970;
+    margin-top: 15px;
+    display: block;
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    
+
+    transition:border-radius 0.5s,background-color 0.5s,color 0.5s,border 0.5;
+    
+}
+
+
+
+
+/* Main section style end here */
+
+
+
+
+
+
+
+

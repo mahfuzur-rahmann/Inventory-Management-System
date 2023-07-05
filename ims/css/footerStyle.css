@@ -1,0 +1,37 @@
+/* Footer style start here */
+
+.footerMain{
+    height: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    
+
+}
+
+.developerfooter img{
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition:opacity 0.5s,border-radius 0.5s;
+    
+}
+.developerfooter img:hover{
+    
+    opacity: 1;
+    border-radius: 50%;
+
+    
+    
+    
+}
+
+/* Footer style end here*/

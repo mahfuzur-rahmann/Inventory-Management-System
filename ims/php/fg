@@ -1,0 +1,63 @@
+<?php
+
+                include "../backEndCode/databaseConnection.php";
+
+                $sql = "SELECT * FROM category";
+
+                echo "<table style='margin:25px;'>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>";
+
+
+                $query = $connection->query($sql);
+                while($data = mysqli_fetch_array($query)){
+                    $show_id = $data['category_id'];
+                    $show_name = $data['category_name'];
+                    $show_date = $data['category_entry_date'];
+                    echo "<tr><td>$show_id</td><td>$show_name</td><td>$show_date</td></tr>";
+
+                }
+
+                echo "</table>";
+
+
+                ?>
+
+
+
+
+<div style="border: 1px solid green; width:100%;height:100%; flex:1;justify-content: center;align-items:center ; text-align:center;">
+
+<h1>Store product</h1>
+
+<?php
+
+    if(isset($_GET['product_name'])){
+
+        $product_name =  $_GET['product_name'];
+
+
+        $sql_2 = "SELECT * FROM store_product WHERE product_id='$product_name' ";
+
+        $query_2 = $connection->query($sql_2);
+        while($data_2 = mysqli_fetch_array($query_2)){
+            $store_product_quantity = $data_2['store_product_quantity'];
+            $store_product_entry_date = $data_2['store_product_entry_date'];
+            $store_product_name = $data_2['product_name'];
+            $store_product_id = $data_2['product_id'];
+
+            echo "<h2>$store_product_name </h2>";
+            echo "<table  style='width:90%' class='table '> <thead class='table-dark'><tr><td>Store date</td> <td>Amount</td></tr> </thead>";
+            echo "<tbody><tr><td>$store_product_entry_date</td> <td>$store_product_quantity</td></tr>";
+            echo "</tbody></table>";
+
+        }
+
+    }
+
+?>
+
+</div>

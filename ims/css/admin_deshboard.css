@@ -1,0 +1,122 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_div{
+
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left_side{ 
+    flex: 0.2;
+    height: 100%;
+    background-color: #063970;
+}
+
+
+
+.block a i{
+    display: inline-block;
+    color: white;
+    margin: 0px 0px;
+    font-style: normal;
+}
+.block{
+    text-align: center;
+    border-bottom: 1px solid white;
+    
+}
+
+.block1 a i{
+    display: inline-block;
+    color: black;
+    margin: 0px 3px;
+    font-style: normal;
+}
+.block1{
+    text-align: center;
+    padding: 6px 9px;
+    border-bottom: 1px solid white;
+    background-color: rgb(213, 255, 255);
+    
+}
+
+.block:hover, .block1:hover{
+    opacity: 0.8;
+    scale: 1.05;
+    transition: 0.5s;
+    transform-origin: left;
+
+}
+
+/* Right side start */
+
+.right_side{
+    flex: 1;
+    margin-left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.upper_line, .lower_line{
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+
+}
+
+
+
+.total_earnings, .total_products, .total_materials  , .total_suppliers{
+    border: 1px solid rgb(158, 155, 155);
+    border-radius: 10px;
+    padding: -3px 40px;
+    width: 250px;
+    text-align: center;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    
+    
+}
+
+.total_earnings, .total_products, .total_materials  , .total_suppliers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+h2{
+    
+}
+
+h3{
+    color: green;
+    
+    
+}
+
+.total_earnings:hover, .total_products:hover, .total_materials:hover  , .total_suppliers:hover{
+    scale: 1.2;
+    transform-origin: center;
+    transition: 2s;
+    opacity: 1;
+
+}
+
+
+
+/* Right side end */
+
+

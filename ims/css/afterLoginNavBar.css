@@ -1,0 +1,68 @@
+
+/*Nav bar design start here*/
+.logoutButton{
+    padding: 15px;
+    border: none;
+    background-color:#063970;
+    color: white;
+    width: 130px;
+    cursor: pointer;
+
+}
+
+.navigatiobBar{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 60px;
+    
+
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    
+    
+
+
+}
+
+.subNav{
+    
+    border: 1px solid #063970;
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    
+}
+
+.navigatioHeader{
+    width: 80%;
+    float: left;
+    text-align: center;
+    flex: 0.7;
+}
+
+.navigatioHeader h3{
+    display: inline-block;
+    width: 100%;
+}
+
+.buttonDIv{ 
+    width: 20%;
+    text-align: center;
+    float: right;
+    flex: 0.3;
+
+    
+}
+
+
+/* Nav bar design ends here */

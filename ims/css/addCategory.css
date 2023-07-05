@@ -1,0 +1,21 @@
+.buttons_block{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin: 10px 20px;
+
+}
+button{
+    flex: 1;
+    color: #063970;
+    padding: 30px;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    
+}
+button div{
+    font-size: 18px;
+
+    
+}
